@@ -17,6 +17,7 @@
 * Node.js
 * bootstrap
 * jest
+* Webpack
 
 
 ## Description

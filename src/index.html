@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Shape Tracker</title>
+  <title>Team Week RPG</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
 </head>
 <body>
-  <h3>Enter three lengths to determine if they can make a triangle.</h3>
-  <form id="triangle-checker-form">
-    <label for="length1">Enter a number:</label>
-    <input id="length1" type="number">
-    <label for="length2">Enter a number:</label>
-    <input id="length2" type="number">
-    <label for="length3">Enter a number:</label>
-    <input id="length3" type="number">
-    <button type="submit">Submit</button>
-  </form>
-  <ul id="response"></ul>
-  <h3>Enter the lengths of a rectangle's two sides to determine its area.</h3>
-  <form id="rectangle-area-form">
-    <label for="rect-length1">Enter a number:</label>
-    <input id="rect-length1" type="number">
-    <label for="rect-length2">Enter a number:</label>
-    <input id="rect-length2" type="number">
-    <button type="submit">Submit</button>
-  </form>
-  <ul id="response2"></ul>
+  <h1 class="header text-center">~ The Bug Slayer ~</h1>
+  <div class="container">
+      <div class="maps">
+      <img src="./../assets/img/character.png" alt="char" id="char">
+
+      <div id="base">
+        <img src="./../assets/img/bg1.png" alt="basemap" usemap="#basemap">
+        <map name="basemap">
+          <area id="top-left" coords="17,10,261,210" shape="rect"> <!--instead of href to an HTML page, we would use JavaScript click event listener-->
+        </map>
+      </div>
+      <div id="island" class="hidden">
+        <img src="./../assets/img/island-scene.png" alt="basemap" usemap="#islandmap">
+        <map name="islandmap">
+          <area id="island" alt="island" coords="317,638,228,449" shape="rect">
+        </map>
+      </div>
+    </div>
+
+    <div id="text">
+      <div id="nav">
+        Nav bar
+      </div>
+      <div id="story">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ornare orci id facilisis. Nulla vitae blandit eros.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
